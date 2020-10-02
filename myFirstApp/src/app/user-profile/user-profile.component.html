@@ -1,0 +1,19 @@
+<div class='profil'>
+    <img [src]="User.photo" [alt]="User.name">
+        <p>Nom :
+            {{User.name}}
+        </p>
+        <p>
+            Prenom :
+            {{User.firstName}}
+        </p>
+        <p>{{User.quote}}</p>
+       
+       <div class='separate'>
+        <input [(ngModel)]="User.quote">
+
+            <button (click)="toggle()" id="bt">
+                {{buttonName}}
+            </button>
+        </div>
+</div>

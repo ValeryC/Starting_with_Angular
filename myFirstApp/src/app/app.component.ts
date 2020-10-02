@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'myFirstApp';
-  name = 'Valery'
+   isShow = false;
+ 
+  toggleDisplay() {
+    this.isShow = !this.isShow;
+  }
+  
 }
